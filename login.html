@@ -148,7 +148,7 @@ $('.login-wrapper').keyup(function(e) {
                 $.ajax({
                   async: "false",
                   type: "POST",
-                  url: "auth.php",
+                  url: "includes/login.inc.php",
                   data: ({
                           username: $("#username").val(),
                           password: $("#password").val()  

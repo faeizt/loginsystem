@@ -38,7 +38,7 @@ class Login extends Dbh{
             }
             $user = $stmt->fetchAll(PDO::FETCH_ASSOC);        
             session_start();
-            $_SESSION['username'] = $row['username'];
+            $_SESSION['username'] = $user[0]['username'];
         }
         $stmt=null;
     }
